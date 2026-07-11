@@ -19,7 +19,7 @@ const Genre = () => {
 
   return (
     <>
-      <h1>Genre</h1>
+      <h5> Genres </h5>
       <ul className="list-group">
         {genres.map((genre) => (
           <li> {genre} </li>

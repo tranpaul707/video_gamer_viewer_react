@@ -1,4 +1,16 @@
 .list-group{
-    background-color: rgb(78, 73, 73);
-    width: 8%;
+    width: 15%;
+    color: rgb(171, 171, 171);
+    margin-left: 40px;
+    line-height: 1.7;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+h5{
+    padding-top: 30px;
+    margin-left: 25px;
 }
