@@ -1,8 +1,8 @@
+import Genre from "./components/Genre/Genre";
+
 function App() {
     return (
-    <div>
-        Hello world
-    </div>
+        <Genre/>
     );
 }
 
