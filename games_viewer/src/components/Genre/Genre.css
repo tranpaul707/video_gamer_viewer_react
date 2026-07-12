@@ -15,6 +15,7 @@
 .genre-list .list-group-item-action:focus {
   background-color: #000000;
   color: whitesmoke;
+  --bs-list-group-action-hover-bg: rgb(150, 150, 150);
 }
 
 .genre-list .list-group-item.active {
