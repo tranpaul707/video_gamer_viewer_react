@@ -1,30 +1,55 @@
-import React from "react";
-import './Genre.css'
+import "./Genre.css";
+import { useState } from "react";
 
 const Genre = () => {
   const genres = [
-    "Action",
-    "RPG",
-    "Adventure",
-    "Strategy",
-    "Sports",
-    "Simulation",
     "Indie",
     "Casual",
-    "Platformer",
-    "Rogue-like",
-    "Visual-Novel",
+    "Action",
+    "Adventure",
+    "Simulation",
+    "Strategy",
+    "RPG",
+    "Exploration",
     "Puzzle",
+    "Action-Adventure",
+    "Arcade",
+    "Horror",
+    "Early Access",
+    "Shooter",
+    "Platformer",
+    "Visual Novel",
+    "Free to Play",
+    "Survival",
+    "Roguelike",
+    "Open World",
   ];
+
+  const [Highlightindex, setHighlightindex] = useState(-1);
+
+  const handleClick = (index: number) => {
+    setHighlightindex(index);
+  };
 
   return (
     <>
       <h5> Genres </h5>
-      <ul className="list-group">
-        {genres.map((genre) => (
-          <li> {genre} </li>
+      <div className="list-group genre-list">
+        {genres.map((genre, index) => (
+          <button
+            type="button"
+            key={genre}
+            className={
+              Highlightindex === index
+                ? "list-group-item list-group-item-action active"
+                : "list-group-item list-group-item-action"
+            }
+            onClick={() => handleClick(index)}
+          >
+            {genre}
+          </button>
         ))}
-      </ul>
+      </div>
     </>
   );
 };

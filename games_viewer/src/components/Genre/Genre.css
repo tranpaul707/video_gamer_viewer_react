@@ -1,16 +1,28 @@
-.list-group{
-    width: 15%;
-    color: rgb(171, 171, 171);
-    margin-left: 40px;
-    line-height: 1.7;
+.genre-list {
+  width: 15%;
+  margin-left: 40px;
+  line-height: 1.75;
 }
 
-ul{
-    list-style: none;
-    padding-left: 0;
+.genre-list .list-group-item {
+  background-color: black;
+  color: whitesmoke;
+  border: 0;
+
 }
 
-h5{
-    padding-top: 30px;
-    margin-left: 25px;
+.genre-list .list-group-item-action:hover,
+.genre-list .list-group-item-action:focus {
+  background-color: #000000;
+  color: whitesmoke;
+}
+
+.genre-list .list-group-item.active {
+  background-color: #393b3d;
+  color: whitesmoke;
+}
+
+h5 {
+  padding-top: 90px;
+  margin-left: 25px;
 }
