@@ -1,9 +1,12 @@
 import Genre from "./components/Genre/Genre";
-
+import Navigation from "./components/Navigation/Navigation";
 function App() {
-    return (
-        <Genre/>
-    );
+  return (
+    <>
+      <Navigation />
+      <Genre />
+    </>
+  );
 }
 
 export default App;

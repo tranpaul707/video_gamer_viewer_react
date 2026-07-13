@@ -1,0 +1,11 @@
+.navbar-color{
+    background-color: #010b13;
+}
+
+.navbar-color .form-control{
+    width: 500px
+}
+
+.navbar-color .navbar-brand{
+    color:whitesmoke
+}
