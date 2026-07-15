@@ -1,6 +1,6 @@
 .genre-list {
-  width: 15%;
-  margin-left: 40px;
+  width: 100%;
+  margin-left: 0;
   line-height: 1.75;
 }
 
@@ -23,7 +23,7 @@
   color: whitesmoke;
 }
 
-h5 {
-  padding-top: 90px;
-  margin-left: 25px;
+aside h5 {
+  padding-top: 1rem;
+  margin-left: 0;
 }
