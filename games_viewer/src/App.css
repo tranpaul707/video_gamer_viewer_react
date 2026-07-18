@@ -1,0 +1,25 @@
+.page-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 0 1rem 2rem;
+}
+
+.page-body > aside {
+  flex: 0 0 220px;
+  min-width: 180px;
+}
+
+.page-body > .content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+    padding-top: 160px;
+    padding-bottom: 150px;
+    width: 1050px;
+}
