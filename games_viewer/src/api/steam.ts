@@ -1,3 +1,5 @@
+import { GENRES } from "../constants/genres"
+
 export type SteamSpyGame = {
   appid: number;
   name: string;

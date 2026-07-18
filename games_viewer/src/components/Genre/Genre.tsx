@@ -1,29 +1,9 @@
 import "./Genre.css";
 import { useState } from "react";
+import { GENRES } from "../../constants/genres"
 
 const Genre = () => {
-  const genres = [
-    "Indie",
-    "Casual",
-    "Action",
-    "Adventure",
-    "Simulation",
-    "Strategy",
-    "RPG",
-    "Exploration",
-    "Puzzle",
-    "Action-Adventure",
-    "Arcade",
-    "Horror",
-    "Early Access",
-    "Shooter",
-    "Platformer",
-    "Visual Novel",
-    "Free to Play",
-    "Survival",
-    "Roguelike",
-    "Open World",
-  ];
+  
 
   const [Highlightindex, setHighlightindex] = useState(-1);
 
@@ -35,7 +15,7 @@ const Genre = () => {
     <>
       <h5> Genres </h5>
       <div className="list-group genre-list">
-        {genres.map((genre, index) => (
+        {GENRES.map((genre, index) => (
           <button
             type="button"
             key={genre}
