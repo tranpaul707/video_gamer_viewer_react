@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   const [games, setGames] = useState<SteamSpyGame[]>([]);
-
+  
   useEffect(() => {
     fetchSteamAPI().then((data) => {
       if (data) setGames(data);
